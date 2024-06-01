@@ -1,11 +1,10 @@
 # Pokémon Dex App
 
-A React Native Pokémon Dex app that allows users to search, view, and manage their favorite Pokémon. The app includes fuzzy search capabilities, a detailed Pokémon view, and team management using Firebase. Built with PokeAPI and Pokedex-Promise-V2 for seamless Pokémon data fetching.
+A React Native Pokémon Dex app that allows users to search, view, and manage their favorite Pokémon. The app includes a detailed Pokémon view, and team management using Firebase. Built with PokeAPI and Pokedex-Promise-V2 for seamless Pokémon data fetching.
 
 ## Features
 
 - **Pokémon List**: Loads a list of Pokémon with infinite scrolling.
-- **Fuzzy Search**: Allows users to search for Pokémon using partial names or typos.
 - **Detailed Pokémon View**: Displays detailed information about each Pokémon.
 - **Team Management**: Users can add Pokémon to their team and manage their team with a maximum of 6 Pokémon.
 - **Firebase Integration**: Stores and manages team data using Firebase Firestore.
@@ -52,7 +51,6 @@ A React Native Pokémon Dex app that allows users to search, view, and manage th
 - **Pokedex-Promise-V2**: Wrapper for PokeAPI.
 - **Firebase**: Backend as a service for team management.
 - **Axios**: HTTP client for API requests.
-- **Fuse.js**: Fuzzy search library.
 
 ## Authors
 
