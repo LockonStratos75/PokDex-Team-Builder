@@ -4,7 +4,7 @@ import {styles} from '../stylesheet/styles';
 import firestore from '@react-native-firebase/firestore';
 import PokemonImage from '../components/PokemonImage';
 
-export function ViewTeam({route, navigation}) {
+export function ViewTeam({route}) {
   const {teamId} = route.params;
   const [team, setTeam] = useState(null);
 
@@ -34,10 +34,7 @@ export function ViewTeam({route, navigation}) {
       <ScrollView>
         {team.pokemons &&
           team.pokemons.map((pokemon, index) => (
-            <TouchableOpacity
-              key={index}
-              style={styles.pokemonInfo}
-            >
+            <TouchableOpacity key={index} style={styles.pokemonInfo}>
               <Text style={styles.pokeNameText}>{pokemon.name}</Text>
               <PokemonImage
                 primaryUri={`https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/92/latest/20200103224733/${pokemon.name}_EpEc.gif/180px-${pokemon.name}_EpEc.gif`}
