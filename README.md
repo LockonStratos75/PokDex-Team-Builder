@@ -1,79 +1,65 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Pokémon Dex App
 
-# Getting Started
+A React Native Pokémon Dex app that allows users to search, view, and manage their favorite Pokémon. The app includes fuzzy search capabilities, a detailed Pokémon view, and team management using Firebase. Built with PokeAPI and Pokedex-Promise-V2 for seamless Pokémon data fetching.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Pokémon List**: Loads a list of Pokémon with infinite scrolling.
+- **Fuzzy Search**: Allows users to search for Pokémon using partial names or typos.
+- **Detailed Pokémon View**: Displays detailed information about each Pokémon.
+- **Team Management**: Users can add Pokémon to their team and manage their team with a maximum of 6 Pokémon.
+- **Firebase Integration**: Stores and manages team data using Firebase Firestore.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Installation
 
-To start Metro, run the following command from the _root_ of your React Native project:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/pokemon-dex-app.git
+    cd pokemon-dex-app
+    ```
 
-```bash
-# using npm
-npm start
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-# OR using Yarn
-yarn start
-```
+3. **Set up Firebase**:
+    - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+    - Enable Firestore in your Firebase project
+    - Add your Firebase configuration to `src/firebase/firebaseConfig.js`
 
-## Step 2: Start your Application
+4. **Run the app**:
+    ```bash
+    npm start
+    ```
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Usage
 
-### For Android
+- **Home Screen**: Displays the list of Pokémon. Scroll to load more Pokémon.
+- **Search**: Enter a Pokémon name to search. Use the search button to fetch specific Pokémon.
+- **Detailed View**: Click on a Pokémon to view detailed information.
+- **Team Management**: Add Pokémon to your team and manage your team from the detailed view.
 
-```bash
-# using npm
-npm run android
+## Code Structure
 
-# OR using Yarn
-yarn android
-```
+- **MainDex Component**: Manages the main Pokémon list and search functionality.
+- **PokemonListItem Component**: Renders individual Pokémon items in the list.
+- **Firebase Integration**: Handles team data storage and management.
 
-### For iOS
+## Dependencies
 
-```bash
-# using npm
-npm run ios
+- **React Native**: Mobile app framework.
+- **Pokedex-Promise-V2**: Wrapper for PokeAPI.
+- **Firebase**: Backend as a service for team management.
+- **Axios**: HTTP client for API requests.
+- **Fuse.js**: Fuzzy search library.
 
-# OR using Yarn
-yarn ios
-```
+## Authors
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- **Rana Hassan** - (https://github.com/LockonStratos75)
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Acknowledgments
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.jsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- PokeAPI for the Pokémon data.
+- Firebase for backend services.
+- React Native community for helpful resources and libraries.
